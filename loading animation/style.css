@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+.load-p {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.load-c1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 63% 37% 68% 32% / 37% 55% 45% 63%;
+    animation: animate 510ms linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-c2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 40% 60% 68% 32% / 37% 78% 22% 63%;
+    animation: animate2 520ms linear infinite;
+}
+@keyframes animate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-c3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 40% 60% 68% 32% / 37% 47% 53% 63% ;
+    animation: animate3 530ms linear infinite;
+}
+@keyframes animate3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-c4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 40% 60% 68% 32% / 56% 47% 53% 44%;
+    animation: animate4 540ms linear infinite;
+}
+@keyframes animate4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-c5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 40% 60% 33% 67% / 56% 47% 53% 44%;
+    animation: animate5 550ms linear infinite;
+}
+@keyframes animate5 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
