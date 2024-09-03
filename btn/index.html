@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <title>Hello, world!</title>
+        <style>
+            .background{
+                min-width: 100vw;
+                min-height: 100vh;
+                background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.05) 50%, transparent 50%);
+            }
+            .background::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(15deg, rgba(255, 255, 255, 0.02) 30%, transparent 10%);
+            }
+            .buttons-area{
+                /* background: #212529; */
+                width: 150px;
+                height: 80px;
+                box-shadow: 7px 7px 11px rgba(11, 11, 11, 0.6),
+                            -8px -5px 14px rgba(255, 255, 255, 0.2);
+            }
+            .btn-inner{
+                box-shadow: inset 7px 7px 11px rgba(11, 11, 11, 0.6),
+                            inset -8px -5px 14px rgba(255, 255, 255, 0.2);
+                overflow: hidden;
+            }
+            .main-btn{
+                top: 50%;
+                left: 0%;
+                transform: translate(15%, -50%);
+                width: 55px;
+                height: 55px;
+                font-size: 26px;
+                line-height: 55px;
+                color: #d1d1d1;
+                background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.2) 30%, rgba(11, 11, 11, 0.6));
+                /* box-shadow: 7px 7px 11px rgba(11, 11, 11, 0.6),
+                            -1px -4px 9px rgba(255, 255, 255, 0.2),
+                            inset -8px -5px 14px rgba(255, 255, 255, 0.2); */
+                /* box-shadow: 7px 7px 11px rgba(11, 11, 11, 0.6), -8px -5px 14px rgba(255, 255, 255, 0.2); */
+                box-shadow: 7px 7px 11px rgba(11, 11, 11, 0.6), 7px 7px 11px rgba(11, 11, 11, 0.6);
+                overflow: hidden;
+                transition: all 1s;
+            }
+            .main-btn.on{
+                left: 48% !important;
+                color: #eaa212;
+                box-shadow: 7px 7px 11px rgba(11, 11, 11, 0.6), 7px 7px 11px rgba(11, 11, 11, 0.6), -8px -5px 14px rgba(255, 255, 255, 0.2);
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body class="bg-dark">
+
+        <div class="background d-flex justify-content-center align-items-center" >
+            <div class="buttons-area rounded-pill p-2">
+                <div class="w-100 h-100 btn-inner rounded-pill position-relative">
+                    <a class="bg-dark text-center position-absolute main-btn rounded-circle" onclick="btnswitch()" id="btn"><i class="bi bi-power"></i></a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function btnswitch(){
+                if(document.getElementById('btn').classList.contains('on')){
+                    document.getElementById('btn').classList.remove('on');
+                }
+                else{
+                    document.getElementById('btn').classList.add('on');
+                }
+            }
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
