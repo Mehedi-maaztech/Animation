@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ani-feild {
+    width: 800px;
+    height: 400px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.panel-card{
+    width: 8%;
+    margin: 10px;
+    border-radius: 42px;
+    min-height: 100%;
+    box-shadow: 2px 3px 12px 0px rgba(0,0,0,0.5);
+    transition: 0.8s !important;
+}
+.panel-card.menu-inactive {
+    width: 63% !important;
+    transition: 0.8s !important;
+}
